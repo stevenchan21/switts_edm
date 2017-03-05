@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--[if !mso]><!-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!--<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<!--[if (gte mso 9)|(IE)]>-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<style type="text/css">
+	/* Basics */
+	body {
+		margin: 0 !important;
+		padding: 0;
+		background-color: #ffffff;
+	}
+	table {
+		border-spacing: 0;
+		font-family: sans-serif;
+		color: #333333;
+	}
+	td {
+		padding: 0;
+	}
+	img {
+		border: 0;
+	}
+	div[style*="margin: 16px 0"] {
+		margin:0 !important;
+	}
+	.wrapper {
+		width: 100%;
+		table-layout: fixed;
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	}
+	.webkit {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	.outer {
+		Margin: 0 auto;
+		width: 100%;
+		max-width: 600px;
+	}
+	.inner {
+		padding: 10px;
+	}
+	.contents {
+		width: 100%;
+	}
+	p {
+		Margin: 0;
+	}
+	a {
+		color: #ee6a56;
+		text-decoration: underline;
+	}
+	.h1 {
+		font-size: 21px;
+		font-weight: bold;
+		Margin-bottom: 18px;
+	}
+	.h2 {
+		font-size: 18px;
+		font-weight: bold;
+		Margin-bottom: 12px;
+	}
+	.full-width-image img {
+		width: 100%;
+		max-width: 600px;
+		height: auto;
+	}
+
+	/* One column layout */
+	.one-column .contents {
+		text-align: left;
+	}
+	.one-column p {
+		font-size: 14px;
+		Margin-bottom: 10px;
+	}
+
+	/*Two column layout*/
+	.two-column {
+		text-align: center;
+		font-size: 0;
+	}
+	.two-column .column {
+		width: 100%;
+		max-width: 300px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.two-column .contents {
+		font-size: 14px;
+		text-align: left;
+	}
+	.two-column img {
+		width: 100%;
+		max-width: 280px;
+		height: auto;
+	}
+	.two-column .text {
+		padding-top: 10px;
+	}
+
+	/*Three column layout*/
+	.three-column {
+		text-align: center;
+		font-size: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.three-column .column {
+		width: 100%;
+		max-width: 200px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.three-column img {
+		width: 100%;
+		max-width: 180px;
+		height: auto;
+	}
+	.three-column .contents {
+		font-size: 14px;
+		text-align: center;
+	}
+	.three-column .text {
+		padding-top: 10px;
+	}
+
+	/* Left sidebar layout */
+	.left-sidebar {
+		text-align: center;
+		font-size: 0;
+	}
+	.left-sidebar .column {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.left-sidebar .left {
+		max-width: 100px;
+	}
+	.left-sidebar .right {
+		max-width: 500px;
+	}
+	.left-sidebar .img {
+		width: 100%;
+		max-width: 80px;
+		height: auto;
+	}
+	.left-sidebar .contents {
+		font-size: 14px;
+		text-align: center;
+	}
+	.left-sidebar a {
+		color: #85ab70;
+	}
+
+	/* Right sidebar layout */
+	.right-sidebar {
+		text-align: center;
+		font-size: 0;
+	}
+	.right-sidebar .column {
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.right-sidebar .left {
+		max-width: 100px;
+	}
+	.right-sidebar .right {
+		max-width: 500px;
+	}
+	.right-sidebar .img {
+		width: 100%;
+		max-width: 80px;
+		height: auto;
+	}
+	.right-sidebar .contents {
+		font-size: 14px;
+		text-align: center;
+	}
+	.right-sidebar a {
+		color: #70bbd9;
+	}
+	.full {
+		max-width: 600px;
+	}
+	.lastpart {
+		font-size: 19px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	/*Media Queries*/
+	@media screen and (max-width: 400px) {
+		.two-column .column,
+		.three-column .column {
+			max-width: 100% !important;
+		}
+		.two-column img {
+			max-width: 100% !important;
+		}
+		.three-column img {
+			max-width: 50% !important;
+		}
+	}
+
+	@media screen and (min-width: 401px) and (max-width: 620px) {
+		.three-column .column {
+			max-width: 33% !important;
+		}
+		.two-column .column {
+			max-width: 50% !important;
+		}
+	}
+	</style>
+	<script>
+		function test() {
+			alert("hello!");
+		}
+	</script>
+
+</head>
+<body>
+	<center class="wrapper">
+		<div class="webkit">
+			<table class="outer" align="center">
+				<tr>
+					<td>
+						If you are unable to see the below images, please click <a href="https://stevenchan21.github.io/switts-edm/">view</a>
+					</td>
+				</tr>
+			</table>
+
+			<table class="outer" align="center">
+				<tr>
+					<td class="full-width-image">
+						<a href="http://switts.com.sg/corporate-gift/4-1-multi-purpose-pen-mp2232/"><img src="http://switts.com.sg/wp-content/uploads/2017/03/New-Corporate-Gifts.jpg" width="600" alt="" /></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner contents">
+									<p class="h1">Our Latest Corporate Gift</p>
+									<p>Check out our latest corporate gift, 4 in 1 Multi-Purpose Pen!. This pen not only can it write, it can be used as a torch, stylus for your Smartphone and laser point for offical presentation.</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="two-column">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<img src="http://switts.com.sg/wp-content/uploads/2017/03/Corporate-Gift-Anime.gif" width="280" alt="" />
+												</td>
+											</tr>
+											<tr>
+												<td class="text">
+													Switts group offer a wide selection of over 1000 products to suit your budget and specific needs.
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<a href="http://switts.com.sg/corporate-gift/waterproof-bag-wp010/"><img src="http://switts.com.sg/wp-content/uploads/2017/03/Other-new-Items-EDM.jpg" width="280" alt="" /></a>
+												</td>
+											</tr>
+											<tr>
+												<td class="text">
+													We have other new corporate gift such as the waterproof bag. This bag helps to keep all your items Dry especially when engaging in water sports or any other activites.
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="three-column">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<img src="http://switts.com.sg/wp-content/uploads/2017/03/Stationary-edm-stationary.jpg" width="180" alt="" />
+												</td>
+											</tr>
+											<tr>
+												<td class="text">
+													<p class="h2">Stationary</p>
+													There are many Stationary items available from pens to sticky notes and many more.
+													<p><a href="http://switts.com.sg/corporate-gifts/stationery/">Click here to find out more</a></p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<img src="http://switts.com.sg/wp-content/uploads/2017/03/Lifestyle-Edm-lifestyle.jpg" width="180" alt="" />
+												</td>
+											</tr>
+											<tr>
+												<td class="text">
+													<p class="h2">Lifestyle</p>
+													Lifestyle products are items that you use in your daily life.
+													<p><a href="http://switts.com.sg/corporate-gifts/lifestyle/">Click here to find out more</a></p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<img src="http://switts.com.sg/wp-content/uploads/2017/03/Bags-Edm-bags.jpg" width="180" alt="" />
+												</td>
+											</tr>
+											<tr>
+												<td class="text">
+													<p class="h2">Bags</p>
+													Bags come in different form, and we have many kinds of bags available. For instance, laptop bags, non-woven bags, shoe bags and etc.
+													<p><a href="http://switts.com.sg/corporate-gifts/bags/">Click here to find out more</a></p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+
+				<tr>
+					<td class="three-column">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<img src="http://switts.com.sg/wp-content/uploads/2017/03/Medical-Edm-medical.jpg" width="180" alt="" />
+												</td>
+											</tr>
+											<tr>
+												<td class="text">
+													<p class="h2">Medical</p>
+													Switts Group also offers corporate gifts relating to medical, from design to usage. For usage medical products, it will be presented upon request.
+													<p><a href="http://switts.com.sg/corporate-gifts/medical/">Click here to find out more</a></p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<img src="http://switts.com.sg/wp-content/uploads/2017/03/Travel-Organiser-Edm-travel-orgniser.jpg" width="180" alt="" />
+												</td>
+											</tr>
+											<tr>
+												<td class="text">
+													<p class="h2">Travel</p>
+													We have a good variety of travel products that will come in handy when travelling. Popular items like toiletries bags, adaptors and many more.
+													<p><a href="http://switts.com.sg/corporate-gifts/travel/">Click here to find out more</a></p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="200" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td>
+													<img src="http://switts.com.sg/wp-content/uploads/2017/03/L-Zip-A5-Organiser-Edm-A5-organiser.jpg" width="180" alt="" />
+												</td>
+											</tr>
+											<tr>
+												<td class="text">
+													<p class="h2">Leather Collection</p>
+													This is a classy and coporate cateory. Most items in this category are cater for corporate/business usage such as Orgniser, Cardholder and etc.
+													<p><a href="http://switts.com.sg/corporate-gifts/leather-collection/">Click here to find out more</a></p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+
+				<tr>
+					<td class="right-sidebar" dir="rtl">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%" dir="rtl">
+						<tr>
+						<td width="100">
+						<![endif]-->
+						<!-- <div class="column left" dir="ltr">
+							<table width="100%">
+								<tr>
+									<td class="inner contents">
+										<img src="http://switts.com.sg/wp-content/uploads/2016/10/Switts-Logo-Website.png" width="80" alt="" />
+									</td>
+								</tr>
+							</table>
+						</div> -->
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="500">
+						<![endif]-->
+						<div class="column full" dir="ltr">
+							<table width="100%">
+								<tr>
+									<td class="inner contents">
+										For more products or any other enquiries, please email to enquiry@switts.com.sg
+										<p><a href="http://switts.com.sg/contact-us/"><button type="button" class="btn btn-primary">For Enquiry</button></a></p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<div class="column left" dir="ltr">
+					<table width="100%">
+						<tr>
+							<td class="inner contents lastpart">
+								<p>Brought to you by</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="inner contents two-column">
+								<img src="http://switts.com.sg/wp-content/uploads/2016/10/Switts-Logo-Website.png" width="200px" alt="" />
+							</td>
+						</tr>
+					</table>
+				</div>
+			</table>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+		</div>
+	</center>
+</body>
+</html>
